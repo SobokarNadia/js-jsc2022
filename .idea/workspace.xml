@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4143b8b9-ae3f-4717-839b-4da5e1ef5a1b" name="Changes" comment="hw">
-      <change afterPath="$PROJECT_DIR$/hw2/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw2/main.js" afterDir="false" />
+    <list default="true" id="4143b8b9-ae3f-4717-839b-4da5e1ef5a1b" name="Changes" comment="hw2">
+      <change afterPath="$PROJECT_DIR$/hw3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw3/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -31,21 +31,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JavaScript",
-      "PLAIN_TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JavaScript&quot;,
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nadya\IdeaProjects\js-jsc2022\hw2" />
@@ -61,7 +61,10 @@
       <updated>1667246782473</updated>
       <workItem from="1667246784317" duration="2211000" />
       <workItem from="1667418688327" duration="113000" />
-      <workItem from="1667418832463" duration="1666000" />
+      <workItem from="1667418832463" duration="1727000" />
+      <workItem from="1667655269575" duration="5476000" />
+      <workItem from="1667826112611" duration="7858000" />
+      <workItem from="1667911661897" duration="4160000" />
     </task>
     <task id="LOCAL-00001" summary="hw">
       <created>1667248981901</created>
@@ -70,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667248981901</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="hw2">
+      <created>1667420550405</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667420550406</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hw" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw" />
+    <MESSAGE value="hw2" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw2" />
   </component>
 </project>
