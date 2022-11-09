@@ -62,7 +62,7 @@ switch (dayWeek) {
 let num1 = +prompt('Number 1:');
 let num2 = +prompt('Number 2:');
 
-if (num1 === num2){
+if (num1 == num2){
     console.log('They are equal');
 } else if (num1 > num2){
     console.log(num1);

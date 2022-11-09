@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4143b8b9-ae3f-4717-839b-4da5e1ef5a1b" name="Changes" comment="hw2">
-      <change afterPath="$PROJECT_DIR$/hw3/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw3/main.js" afterDir="false" />
+    <list default="true" id="4143b8b9-ae3f-4717-839b-4da5e1ef5a1b" name="Changes" comment="hw3">
+      <change afterPath="$PROJECT_DIR$/hw4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw4/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,8 @@
       <workItem from="1667418832463" duration="1727000" />
       <workItem from="1667655269575" duration="5476000" />
       <workItem from="1667826112611" duration="7858000" />
-      <workItem from="1667911661897" duration="4160000" />
+      <workItem from="1667911661897" duration="4864000" />
+      <workItem from="1668031840151" duration="3847000" />
     </task>
     <task id="LOCAL-00001" summary="hw">
       <created>1667248981901</created>
@@ -80,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667420550406</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hw3">
+      <created>1667916166061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667916166061</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +109,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hw" />
     <MESSAGE value="hw2" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw2" />
+    <MESSAGE value="hw3" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw3" />
   </component>
 </project>
