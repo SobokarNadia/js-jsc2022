@@ -220,16 +220,16 @@ console.log(reverseArr([1, 2, 3]));
 
 // - створити функцію, яка якщо приймає один аргумент, просто вивдоить його, якщо два аргументи - складає або конкатенує їх між собою.
 
-function func () {
-    if (arguments.length === 1){
+function func() {
+    if (arguments.length === 1) {
         console.log(arguments[0]);
-    }else if (arguments.length >1){
+    } else if (arguments.length > 1) {
         let sum = 0;
         for (const argument of arguments) {
             sum += argument;
         }
         console.log(sum);
-    }else console.log('error');
+    } else console.log('error');
 }
 
 func(3, 5, '4');
@@ -241,11 +241,11 @@ func(3, 5, '4');
 // результат
 //     [3,5,7,9]
 
-let sumArr = (arr1, arr2) =>{
+let sumArr = (arr1, arr2) => {
     let newArr = [];
     for (let i = 0; i < arr1.length; i++) {
         for (let j = 0; j < arr2.length; j++) {
-            if (i === j){
+            if (i === j) {
                 newArr[i] = arr1[i] + arr2[j];
             }
 
@@ -259,7 +259,7 @@ console.log(sumArr([1, 2, 3, 4], [2, 3, 4, 5,]));
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
 
-let keyArr = (arr) =>{
+let keyArr = (arr) => {
     let keys = [];
     for (let i = 0; i < arr.length; i++) {
         for (const key in arr[i]) {
@@ -274,7 +274,7 @@ console.log(keyArr([{name: 'Dima', age: 13}, {model: 'Camry'}]));
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
 
-let propArr = (arr) =>{
+let propArr = (arr) => {
     let props = [];
     for (let i = 0; i < arr.length; i++) {
         for (let prop in arr[i]) {
@@ -284,6 +284,85 @@ let propArr = (arr) =>{
     return props;
 }
 console.log(propArr([{name: 'Dima', age: 13}, {model: 'Camry'}]));
+
+// - Дано натуральное число n. Выведите все числа от 1 до n.
+
+function nCount(n) {
+    for (let i = 1; i < n + 1; i++) {
+        console.log(i);
+
+    }
+};
+nCount(5);
+
+// - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
+
+let twoNum = (a, b) => {
+    if (a < b) {
+        for (let i = a; i <= b; i++) {
+            console.log(i);
+        }
+    } else if (a > b) {
+        for (let i = a; i >= b; i--) {
+            console.log(i);
+
+        }
+    } else
+        console.log('they are equal = ', a);
+}
+twoNum(5, 5);
+
+// -функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+//   EXAMPLE:
+//   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+//   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+//   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+
+let changeI = (arr, i) => {
+    if (arr[i + 1] !== null) {
+        let num = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = num;
+    }
+    return arr;
+}
+console.log(changeI([9, 8, 0, 4], 0));
+console.log(changeI([9, 8, 0, 4], 1));
+console.log(changeI([9, 8, 0, 4], 2));
+
+// - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+// Двожина масиву від 2 до 100
+// EXAMPLE:
+// [1,0,6,0,3] => [1,6,3,0,0]
+// [0,1,2,3,4] => [1,2,3,4,0]
+// [0,0,1,0]   => [1,0,0,0]
+
+let nullEl = (arr) => {
+    let newArr = [];
+    if (arr.length > 2 && arr.length < 100) {
+        let count = 0;
+        for (let i = 0, j = 0; i < arr.length; i++) {
+            if (arr[i] === 0) {
+                count++;
+            } else {
+                newArr[j] = arr[i];
+                j++;
+            }
+
+        }
+        if (count > 0){
+            for (let i = 0; i < count; i++) {
+                newArr[newArr.length] = 0;
+
+            }
+        }
+    }
+    return newArr;
+}
+console.log(nullEl([1, 0, 6, 0, 3]));
+console.log(nullEl([0,1,2,3,4]));
+console.log(nullEl([0,0,1,0]));
+
 
 
 

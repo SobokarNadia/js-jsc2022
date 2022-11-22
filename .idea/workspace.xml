@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4143b8b9-ae3f-4717-839b-4da5e1ef5a1b" name="Changes" comment="hw4">
-      <change afterPath="$PROJECT_DIR$/hw5/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hw5/main.js" afterDir="false" />
+    <list default="true" id="4143b8b9-ae3f-4717-839b-4da5e1ef5a1b" name="Changes" comment="hw5">
+      <change afterPath="$PROJECT_DIR$/hw6/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hw6/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw5/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/hw5/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,9 @@
       <workItem from="1668335607071" duration="1152000" />
       <workItem from="1668341338251" duration="8221000" />
       <workItem from="1668440345611" duration="23000" />
-      <workItem from="1668513795062" duration="7342000" />
+      <workItem from="1668513795062" duration="8196000" />
+      <workItem from="1668799868980" duration="3757000" />
+      <workItem from="1669099636805" duration="6421000" />
     </task>
     <task id="LOCAL-00001" summary="hw">
       <created>1667248981901</created>
@@ -99,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668036467131</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="hw5">
+      <created>1668527957691</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668527957691</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +131,7 @@
     <MESSAGE value="hw2" />
     <MESSAGE value="hw3" />
     <MESSAGE value="hw4" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw4" />
+    <MESSAGE value="hw5" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw5" />
   </component>
 </project>
