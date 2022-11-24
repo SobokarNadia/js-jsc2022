@@ -59,7 +59,7 @@ let sortNums = (arr, directions) => {
         return arr.sort((el1, el2) => el1 - el2);
     } else if (directions === 'descending') {
         return arr.sort((el1, el2) => el2 - el1);
-    }else
+    } else
         return 'error';
 }
 console.log(sortNums(nums, 'ascending')); // [3,11,21]
@@ -157,21 +157,21 @@ console.log(clubs);
 // Додатково по reduce
 let cardsSuits = deck.reduce((obj, el) => {
     if (el.cardSuit === 'Clubs') {
-         obj.clubs.push(el);
-    }else if(el.cardSuit === 'Spade') {
-         obj.spades.push(el);
-    }else if(el.cardSuit === 'Diamonds'){
-         obj.diamonds.push(el);
-    }else if (el.cardSuit === 'Hearts'){
-         obj.hearts.push(el);
+        obj.clubs.push(el);
+    } else if (el.cardSuit === 'Spade') {
+        obj.spades.push(el);
+    } else if (el.cardSuit === 'Diamonds') {
+        obj.diamonds.push(el);
+    } else if (el.cardSuit === 'Hearts') {
+        obj.hearts.push(el);
     }
     return obj;
-    },{
-        spades: [],
-            diamonds: [],
-            hearts: [],
-            clubs: []
-    });
+}, {
+    spades: [],
+    diamonds: [],
+    hearts: [],
+    clubs: []
+});
 console.log(cardsSuits);
 
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
@@ -181,3 +181,4 @@ console.log(cardsSuits);
 //     hearts: [],
 //     clubs: []
 // })
+
