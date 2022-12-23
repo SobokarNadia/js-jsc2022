@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+    let deleteAll = (e) => {
+        localStorage.clear();
+        window.location.reload();
+    };
+
+    function delet(e){
+        let divId = e.target.parentElement.className.slice(10);
+        let arr = JSON.parse(localStorage.getItem('products'));
+        arr.splice(divId, 1);
+        localStorage.setItem('products', JSON.stringify(arr));
+        window.location.reload();
+    }
+
+    let button = document.createElement('button');
+    button.addEventListener('click', deleteAll);
+    button.innerText = 'Delete All';
+    document.body.appendChild(button);
+
+    let products = JSON.parse(localStorage.getItem('products'));
+
+    products.forEach((product, i)=> {
+        if(product !== null){
+            let div = document.createElement('div');
+            div.className = `product pr${i}`;
+            document.body.appendChild(div);
+            div.innerHTML = `<img alt='image' class="image" src="${product.image}"/>
+                             <div>${product.name}</div>
+                             <div>${product.price} * ${product.amount}</div>`;
+            let button = document.createElement('button');
+            button.addEventListener('click', delet);
+            button.innerText = 'Delete';
+            div.appendChild(button);
+        }
+    })
+
+
+</script>
+</body>
+</html>

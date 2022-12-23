@@ -1,0 +1,37 @@
+.user{
+    border: black 1px solid;
+    padding: 15px;
+    margin: 5px;
+}
+.post, .post1{
+    border: black 1px solid;
+    padding: 15px;
+    margin: 15px;
+}
+.comment{
+    border: black 1px solid;
+    padding: 15px;
+    margin: 15px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input, button{
+    width: 15vw;
+    margin: 5px;
+}
+.product{
+    border: black 1px solid;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
+.image{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>
+    let url = new URL(location.href);
+    let id = url.searchParams.get('id');
+
+    let userInfo = document.createElement('div');
+    document.body.appendChild(userInfo);
+    userInfo.classList.add('userInfo');
+
+    let objInObj = (obj) => {
+        for (const objKey in obj) {
+            if (typeof obj[objKey] === 'object'){
+                let div = document.createElement('div');
+                userInfo.appendChild(div);
+                div.innerHTML = `
+                <div>${objKey}:</div>
+            `;
+                objInObj(obj[objKey]);
+            }else{
+                let div = document.createElement('div');
+                div.innerHTML = `
+                <div>${objKey} - ${obj[objKey]}</div>
+            `;
+                userInfo.appendChild(div);
+                let link = `post-details.html?id=${id}`;
+            }
+        }
+    }
+
+    let posts = () =>{
+        postsDiv.classList.toggle('posts');
+    }
+
+    fetch(`https://jsonplaceholder.typicode.com/users?id=${id}`)
+        .then(response => response.json())
+        .then(user => {
+            objInObj(user[0]);
+            let link = document.createElement('a');
+            link.innerHTML = `<button class="button" onclick="posts()">Posts...</button>`;
+            userInfo.appendChild(link);
+
+        });
+
+    let postsDiv = document.createElement('div');
+    postsDiv.classList.add('invisible');
+    document.body.appendChild(postsDiv);
+    fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
+        .then(response => response.json())
+        .then(posts => {
+            posts.forEach(element => {
+                let post = document.createElement('div');
+                post.classList.add('post');
+                postsDiv.appendChild(post);
+                post.innerHTML = `<div>${element.title}</div>`
+                let link = document.createElement('a');
+                link.innerHTML = `<button onclick="posts()">Posts...</button>`;
+                link.setAttribute('href', `post-details.html?id=${id}&postId=${element.id}`);
+                post.appendChild(link);
+            })
+        })
+</script>
+</body>
+</html>

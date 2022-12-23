@@ -216,25 +216,60 @@ button1.setAttribute('type', 'button');
 form.appendChild(ageField);
 form.appendChild(button1);
 
-
 let clickFunc = function () {
-    {
-        if (document.forms.f.input.value !== '') {
-            if (document.forms.f.input.value <= 18) {
-                let div = document.createElement('div');
-                document.body.appendChild(div);
-                div.innerText = 'You are under 18';
-            } else {
-                let div = document.createElement('div');
-                document.body.appendChild(div);
-                div.innerText = 'You are over 18';
-            }
+
+    if (ageField.value !== '') {
+        if (ageField.value <= 18) {
+            let div = document.createElement('div');
+            document.body.appendChild(div);
+            div.innerText = 'You are under 18';
+        } else {
+            let div = document.createElement('div');
+            document.body.appendChild(div);
+            div.innerText = 'You are over 18';
         }
     }
 }
+
 button1.addEventListener('click', clickFunc);
 
 
 // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додаткова частина для завдання)
+
+
+let row = document.createElement('input');
+row.setAttribute('name', 'row');
+
+let column = document.createElement('input');
+column.setAttribute('name', 'column');
+
+let content = document.createElement('input');
+content.setAttribute('name', 'content');
+
+let submit = document.createElement('button');
+submit.setAttribute('type', 'button');
+
+document.body.append(row, column, content, submit)
+
+submit.onclick = function (e) {
+    let table = document.createElement('table');
+    document.body.appendChild(table);
+    for (let i = 0; i < row.value; i++) {
+        let tr = document.createElement('tr');
+        table.appendChild(tr);
+        for (let j = 0; j < column.value; j++) {
+            tr.innerHTML += `<td>d</td>`;
+
+        }
+    }
+    let arr = content.value.split(' ');
+    for (let i = 0; i < row.value * column.value; i++) {
+        let td = document.getElementsByTagName('td')[i];
+        td.innerText = `${arr[i]}`;
+
+    }
+
+
+}

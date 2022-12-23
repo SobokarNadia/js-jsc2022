@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script >
+    // 1.
+    // Отримати відповідь з цього ресурсу відповідь, та вивести в документ як в прикладі на занятті
+    // https://jsonplaceholder.typicode.com/posts
+    //     зробити кнопку до кожного поста. при кліку на яку виводяться в окремий блок всі коментарі поточного поста
+    //
+    //
+
+    fetch(`https://jsonplaceholder.typicode.com/posts`)
+        .then(response => response.json())
+        .then(posts => {
+            posts.forEach(post => {
+                document.body.innerHTML += `<div class='post1'>
+                                   <div>${post.title}:</div>
+                                   <div>${post.body}</div>
+                                   <button onclick="comments1(${post.id})">Comments</button>
+                                   </div>`;
+            })
+        })
+
+
+    let comments1 = (id) => {
+        fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
+            .then(response => response.json())
+            .then(comments => {
+                console.log(id)
+                let post = document.getElementsByClassName('post1')[id-1];
+
+                comments.forEach(comment => {
+                    post.innerHTML += `<div class='comment'>
+                                   <div>${comment.name}:</div>
+                                   <div>${comment.body}</div>
+                                   </div>`;
+                })
+            })
+    }
+</script>
+</body>
+</html>

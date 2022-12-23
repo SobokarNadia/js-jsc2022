@@ -1,0 +1,49 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.user{
+    width: 45vw;
+    border: black 1px solid;
+    padding: 10px;
+    margin: 5px;
+}
+.button{
+    width: 90vw ;
+}
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.post{
+    width: 15vw ;
+    border: black 1px solid;
+    padding: 10px;
+    margin: 5px;
+}
+.invisible{
+    display: none;
+}
+.post1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comments{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.comment{
+    border: black 1px solid;
+    padding: 10px;
+    margin: 5px;
+    width: 22vw;
+}
