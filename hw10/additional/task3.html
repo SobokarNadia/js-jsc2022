@@ -38,13 +38,15 @@
 
 
     let products = [{name, amount, price, image}];
-
-    if (localStorage.getItem('products') == null) {
-        localStorage.setItem(`products`, JSON.stringify(products));
-    } else {
-        let newProducts = products.concat(JSON.parse(localStorage.getItem('products')));
-        localStorage.setItem(`products`, JSON.stringify(newProducts));
+    if (name !== '' || amount !== '' || price !== '' || image !== ''){
+        if (localStorage.getItem('products') == null) {
+            localStorage.setItem(`products`, JSON.stringify(products));
+        } else {
+            let newProducts = products.concat(JSON.parse(localStorage.getItem('products')));
+            localStorage.setItem(`products`, JSON.stringify(newProducts));
+        }
     }
+
 
 
     function submit(e) {
