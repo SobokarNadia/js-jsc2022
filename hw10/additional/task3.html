@@ -30,10 +30,6 @@
                       <button onclick="submit(e)">Submit</button>
                       <a href='list.html'> На сторінку товарів</a>`;
 
-    function submit(e) {
-        e.preventDefault();
-
-    }
     let url = new URL(location.href);
     let name = url.searchParams.get('name');
     let amount = url.searchParams.get('amount');
@@ -42,12 +38,18 @@
 
 
     let products = [{name, amount, price, image}];
+
+    if (localStorage.getItem('products') == null) {
+        localStorage.setItem(`products`, JSON.stringify(products));
+    } else {
         let newProducts = products.concat(JSON.parse(localStorage.getItem('products')));
         localStorage.setItem(`products`, JSON.stringify(newProducts));
+    }
 
 
-
-
+    function submit(e) {
+        e.preventDefault();
+    }
 
 
 </script>

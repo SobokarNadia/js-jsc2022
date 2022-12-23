@@ -28,7 +28,6 @@
     let products = JSON.parse(localStorage.getItem('products'));
 
     products.forEach((product, i)=> {
-        if(product !== null){
             let div = document.createElement('div');
             div.className = `product pr${i}`;
             document.body.appendChild(div);
@@ -39,7 +38,6 @@
             button.addEventListener('click', delet);
             button.innerText = 'Delete';
             div.appendChild(button);
-        }
     })
 
 
